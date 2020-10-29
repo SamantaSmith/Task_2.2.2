@@ -1,4 +1,6 @@
-package web.controller;
+package service;
+
+import model.CarModel;
 
 import java.util.ArrayList;
 import java.util.List;
