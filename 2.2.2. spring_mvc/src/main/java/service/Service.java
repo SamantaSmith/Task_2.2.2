@@ -7,13 +7,16 @@ import java.util.List;
 
 public class Service {
 
-    public static List<CarModel> carsReturner(List<CarModel> l, int count) {
 
-        List<CarModel> list = new ArrayList<>();
-        for (int i = 0; i<count; i++) {
 
-            list.add(l.get(i));
+    public static List<CarModel> carsReturner() {
+
+        List<CarModel> listCars = new ArrayList<>();
+        for (int i = 0; i<5; i++) {
+
+            listCars.add(new CarModel("Mers", i*10, "black"));
         }
-        return list;
+
+        return listCars;
     }
 }
